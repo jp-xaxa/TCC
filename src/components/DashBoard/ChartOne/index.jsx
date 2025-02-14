@@ -79,6 +79,46 @@ export function ChartOne({ spent }) {
         </Chart>
       </Container>
     )
+  } else if (spent > monthlyLimit) {
+    return (
+      <Container>
+        <Chart>
+          <h3>Mês atual</h3>
+
+          <Donut style={{ "--percentage": percentage }}>
+            <svg viewBox="0 0 185 185">
+              {/* Circulo de baixo (Total) */}
+              <circle
+                cx="50%"
+                cy="50%"
+                r="75"
+                opacity="1"
+                stroke="#FF002E"
+                className="circleLimit"
+              />
+            </svg>
+
+            <div className="percentage">
+              <h3>Gasto</h3>
+              <p>{percentage}%</p>
+            </div>
+          </Donut>
+
+          <Legend>
+            <div className="item">
+              <div className="circulo1"></div>
+              <span>Limite</span>
+              <span>R$ {monthlyLimit}</span>
+            </div>
+            <div className="item">
+              <div className="circulo3"></div>
+              <span>Gasto</span>
+              <span>R$ {spent}</span>
+            </div>
+          </Legend>
+        </Chart>
+      </Container>
+    )
   } else {
     return (
       <Container>

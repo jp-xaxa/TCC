@@ -146,6 +146,10 @@ export const Donut = styled.div`
       }
     }
 
+    .circleLimit {
+      stroke-dashoffset: 0;
+    }
+
     /*Circulo de cima*/
     .circleSpent {
       stroke-dashoffset: calc(
@@ -232,6 +236,14 @@ export const Legend = styled.div`
     height: 1rem;
     display: block;
     background: linear-gradient(122deg, #595437 0%, #f2cb05 100%);
+    border-radius: 999px;
+  }
+
+  .circulo3 {
+    width: 1rem;
+    height: 1rem;
+    display: block;
+    background: ${({ theme }) => theme.COLORS.RED};
     border-radius: 999px;
   }
 

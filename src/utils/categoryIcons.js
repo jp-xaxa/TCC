@@ -51,7 +51,7 @@ export const categoryIcons = {
     icon: iconHome,
   },
   Hygiene: {
-    name: "Higiêne Pessoal",
+    name: "Higiene Pessoal",
     icon: iconHygiene,
   },
   Meat: {
