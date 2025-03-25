@@ -10,7 +10,6 @@ import { Container, List, Header, NoSpent } from "./styles"
 
 export function ChartFour({ data }) {
   const [control, setControl] = useState(1)
-  console.log(data)
 
   const totalPages = Math.ceil(data.length / 5)
 

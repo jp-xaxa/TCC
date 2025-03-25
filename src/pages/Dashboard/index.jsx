@@ -29,7 +29,7 @@ export function Dashboard() {
               spent={data.gasto_mes_atual}
             />
             <ChartThree
-              data={data.gasto_no_ano.mes_do_ano}
+              data={data.gasto_no_ano.meses_do_ano}
               monthWithMostSpent={data.gasto_no_ano.mes_maior_gasto}
               monthWithLeastSpent={data.gasto_no_ano.mes_menor_gasto}
               averageSpent={data.gasto_no_ano.media_gasto_ano}
